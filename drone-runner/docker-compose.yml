@@ -2,7 +2,7 @@ version: "3"
 
 services:
   dronerunner:
-    image: drone/drone-runner-docker:1
+    image: drone/drone-runner-docker:1.8.2
     container_name: dronerunner
     restart: always
     environment:

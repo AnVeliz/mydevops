@@ -3,8 +3,8 @@
 echo "Run services"
 
 echo "Enter server name"
-read -p "Server name: " server_name_var
-export SERVER_ADDRESS=$server_name_var
+read -p "Server name: (e.g. git.myserver.com)" server_name_var
+export DRONE_SERVER_ADDRESS=$server_name_var
 
 echo "Enter Drone RPC secret key"
 read -p "Drone secret key: " drone_rpc_secret_var

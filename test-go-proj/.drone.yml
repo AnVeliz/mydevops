@@ -1,0 +1,16 @@
+---
+kind: pipeline
+type: docker
+name: default
+steps:
+- name: gobuild
+  image: golang
+  commands:
+  - go build
+  - go test
+trigger:
+  event:
+    include:
+    - pull_request
+    - push
+    - custom
